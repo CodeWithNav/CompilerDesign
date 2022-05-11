@@ -109,8 +109,8 @@ class _HomeViewState extends State<HomeView> {
           ),
           InkWell(
             onTap: () {
-              launchUrl(Uri.parse("https://github.com/CodeWithNav"));
-              // TODO open repository
+              launchUrl(
+                  Uri.parse("https://github.com/CodeWithNav/CompilerDesing"));
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
