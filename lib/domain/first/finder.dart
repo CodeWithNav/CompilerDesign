@@ -1,4 +1,4 @@
-import '../../helper/string_helper.dart';
+import 'package:compiler_design/helper/string_helper.dart';
 
 class FirstFinder {
   late Map<String, List<String>> cfgMap = {};
@@ -52,7 +52,7 @@ class FirstFinder {
     Set<String> res = {};
     int i = 0;
     for (; i < n; i++) {
-      if (string[i].isChar()) {
+      if (string[i].isTerminal()) {
         res.add(string[i]);
         break;
       } else {
