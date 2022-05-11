@@ -110,7 +110,7 @@ class _HomeViewState extends State<HomeView> {
           InkWell(
             onTap: () {
               launchUrl(
-                  Uri.parse("https://github.com/CodeWithNav/CompilerDesing"));
+                  Uri.parse("https://github.com/CodeWithNav/CompilerDesign"));
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -265,7 +265,7 @@ class ProductionField extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       children: [
         Expanded(
-          flex: 1,
+          flex: 2,
           child: TextFormField(
             initialValue: production.startingSymbol,
             onChanged: (String? value) {
