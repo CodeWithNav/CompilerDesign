@@ -43,7 +43,12 @@ class FollowFinder {
     }
 
     for (String nonTerminal in allNonTerminals) {
-      res[nonTerminal] = follow(terminal: nonTerminal)..add("\$");
+      final follows = follow(terminal: nonTerminal);
+      if (follows.isEmpty) {
+        res[nonTerminal] = {"\$"};
+      } else {
+        res[nonTerminal] = follows;
+      }
     }
     return res;
   }
